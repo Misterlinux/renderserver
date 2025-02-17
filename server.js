@@ -24,16 +24,14 @@ app.use( cors(corsOptions) )
 //We install the postSQL client pg
 const { Pool } = require("pg");
 
-//Different Poll config
-/*
 const connectionString = 
-  `postgres://mini:${process.env.DATABASE_PASSWORD}@dpg-cun1gphu0jms73b9u8pg-a/renderserver_jjqh`;
+  `postgresql://userdb:${process.env.DATABASE_PASSWORD}@dpg-cupju01opnds7395o040-a/databasedb_cxni`;
 
 const pool = new Pool({
   connectionString,
 });
-*/
 
+/*
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
@@ -41,7 +39,7 @@ const pool = new Pool({
   password: "mrlzarate",
   port: 5432,
 });
-
+*/
 
 app.post("/hotels", function(req, res) {
   console.log( "logaritminco lano" )
